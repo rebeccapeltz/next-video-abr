@@ -24,3 +24,25 @@ a {
     background: black;
   }
 }
+
+
+/* video container */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.container > div {
+  width: 600px;
+  text-align: center;
+  margin: 1rem;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 1000px) {
+ .container > div{width: 320px;}
+}
