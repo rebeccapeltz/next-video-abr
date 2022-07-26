@@ -1,6 +1,7 @@
 require('dotenv').config()
 const cloudinary = require('cloudinary').v2
 
+// test upload video
 export default async function handler(req, res) {
   const resp = await cloudinary.uploader
     // .upload('https://res.cloudinary.com/picturecloud7/video/upload/v1584394767/remote-media/video/rooster.mp4', {
