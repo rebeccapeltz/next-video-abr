@@ -24,7 +24,7 @@ const VideoPlayer = (props) => {
     // return () => {
       // console.log('This will be logged on unmount');
     // };
-  },[]);
+  },[props]);
 
   return (
     <>
