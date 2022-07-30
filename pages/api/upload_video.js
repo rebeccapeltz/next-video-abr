@@ -17,7 +17,26 @@ export default async function handler(req, res) {
             const publicId = `${id}-${Date.now()}`
             const resp = await cloudinary.uploader.upload(req.query.url, {
                 public_id: publicId,
-                resource_type: 'video'
+                resource_type: 'video',
+                type: "upload", 
+                eager: [
+                    {
+                        streaming_profile: "full_hd_wifi",
+                        format: "m3u8",
+                    },
+                    {
+                        streaming_profile: "full_hd_wifi_h265",
+                        format: "m3u8",
+                    },
+                    {
+                        streaming_profile: "full_hd_wifi_vp9",
+                        format: "mpd",
+                    },
+                ],
+                eager_async: true,
+                eager_notification_url:
+                    "https://webhook.site/aabf3caa-4dea-4a32-9e8c-42f7720b02af",
+                invalidate: true
             });
             console.log(resp)
             res.status(200).json({ msg: 'successful surf video upload', public_id: publicId, url:url })
