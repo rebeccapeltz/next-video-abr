@@ -25,6 +25,10 @@ export default async function handler(req, res) {
                         format: "m3u8",
                     },
                     {
+                        streaming_profile: "full_hd_wifi",
+                        format: "m3u8",
+                    },
+                    {
                         streaming_profile: "full_hd_wifi_h265",
                         format: "m3u8",
                     },
