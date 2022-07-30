@@ -34,3 +34,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Upload Video
+GET https://react-video-abr.vercel.app/api/upload_video?id=skiing&url=https://res.cloudinary.com/picturecloud7/video/upload/test.mp4
+Test values:
+id: skiing
+url: https://res.cloudinary.com/picturecloud7/video/upload/test.mp4
