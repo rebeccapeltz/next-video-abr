@@ -25,10 +25,6 @@ export default async function handler(req, res) {
                         format: "m3u8",
                     },
                     {
-                        streaming_profile: "full_hd_wifi",
-                        format: "m3u8",
-                    },
-                    {
                         streaming_profile: "full_hd_wifi_h265",
                         format: "m3u8",
                     },
@@ -40,7 +36,8 @@ export default async function handler(req, res) {
                 eager_async: true,
                 eager_notification_url:
                     "https://webhook.site/aabf3caa-4dea-4a32-9e8c-42f7720b02af",
-                invalidate: true
+                invalidate: true,
+                overwrite
             });
             console.log(resp)
             res.status(200).json({ msg: 'successful surf video upload', public_id: publicId, url:url })
