@@ -14,23 +14,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Cloudinary Video ABR</title>
+        <title>Video Download vs Streaming </title>
         <meta name="description" content="Compare ABR in Video Player with Video Element" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Cloudinary Video
+           Video Download vs Streaming
         </h1>
 
         <div className="container">
           <div>
-            <h3>Cloudinary Video Element</h3>
+            <h3>Video Element</h3>
             <CloudinaryVideoElement cloudName={cloudName} publicId={publicId} />
           </div>
           <div>
-            <h3>Cloudinary Video Player (ABR)</h3>
+            <h3>Video Streaming (ABR)</h3>
             <DynamicVideoPlayer cloudName={cloudName} publicId={publicId} />
           </div>
         </div>
