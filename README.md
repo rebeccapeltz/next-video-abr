@@ -39,6 +39,7 @@ https://next-video-abr.vercel.app
 
 ## Upload Video
 GET https://next-video-abr.vercel.app/api/upload_video?id=skiing&url=https://res.cloudinary.com/picturecloud7/video/upload/test.mp4
+
 Test values:
 id: skiing
 url: https://res.cloudinary.com/picturecloud7/video/upload/test.mp4
