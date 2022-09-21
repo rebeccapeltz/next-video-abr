@@ -12,7 +12,7 @@ const DynamicVideoPlayer = dynamic(() => import('../components/video-player'), {
 export default function Home() {
   const cloudName = "picturecloud7"
   const publicId = "skiing-1659222720685"
-  return ( 
+  return (
     <div className={styles.container}>
        <Navigation />
       <Head>
@@ -27,10 +27,6 @@ export default function Home() {
         </h1>
 
         <div className="container">
-          <div>
-            <h3>Video Element</h3>
-            <CloudinaryVideoElement cloudName={cloudName} publicId={publicId} />
-          </div>
           <div>
             <h3>Video Streaming (ABR)</h3>
             <DynamicVideoPlayer cloudName={cloudName} publicId={publicId} />

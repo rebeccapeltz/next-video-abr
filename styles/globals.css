@@ -47,3 +47,10 @@ a {
  .container > div{width: 320px;}
 }
 
+.active {
+  font-weight: bold;
+}
+.nav-list {
+  list-style-type: none;
+}
+
